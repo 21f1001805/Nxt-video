@@ -31,6 +31,7 @@ NXT Video lets users:
 The app uses server-rendered pages for data-heavy routes and client components for interactivity.
 
 
+mermaid
 flowchart LR
   U[User Browser] --> APP[Next.js App Router]
   APP --> AUTH[NextAuth]
