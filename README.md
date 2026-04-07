@@ -30,18 +30,18 @@ NXT Video lets users:
 
 The app uses server-rendered pages for data-heavy routes and client components for interactivity.
 
-
-mermaid
+```mermaid
 flowchart LR
-  U[User Browser] --> APP[Next.js App Router]
-  APP --> AUTH[NextAuth]
-  APP --> API[/app/api/video]
-  APP --> IKAPI[/app/api/auth/imagekit-auth]
-  AUTH --> DB[(MongoDB)]
+  U["User Browser"] --> APP["Next.js App Router"]
+  APP --> AUTH["NextAuth"]
+  APP --> API["/app/api/video"]
+  APP --> IKAPI["/app/api/auth/imagekit-auth"]
+  AUTH --> DB[("MongoDB")]
   API --> DB
-  IKAPI --> IK[ImageKit Auth Signature]
-  U --> IKUP[ImageKit Upload]
+  IKAPI --> IK["ImageKit Auth Signature"]
+  U --> IKUP["ImageKit Upload"]
   IKUP --> APP
+```
 
 
 ## Request Flow
